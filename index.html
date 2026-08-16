@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kriselle Cafe — Where Good Day Begins. A cute and modern coffee shop in Rizal Ave., Batangas City.">
+  <title>Kriselle Cafe | Where Good Day Begins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:"DM Sans",sans-serif;color:#3d2b27;background:#fffaf5;line-height:1.6}a{text-decoration:none;color:inherit}.navbar{position:sticky;top:0;z-index:20;height:78px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;background:rgba(255,250,245,.94);backdrop-filter:blur(12px);border-bottom:1px solid #eadbd0}.brand{display:flex;align-items:center;gap:10px}.brand-mark{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#6d4637;color:white;font-size:21px}.brand strong{display:block;font-family:"Playfair Display",serif;font-size:21px}.brand small{display:block;font-size:10px;color:#a07868;letter-spacing:1.2px}.navbar nav{display:flex;gap:30px;font-size:14px;font-weight:600;color:#674b42}.navbar nav a{transition:.2s}.navbar nav a:hover{color:#b96873}.menu-toggle{display:none;border:0;background:none;font-size:27px;color:#4b342e}.hero{min-height:650px;padding:80px 8% 70px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;overflow:hidden;background:linear-gradient(135deg,#fffaf5 55%,#f7e5dc 55%)}.hero-content{max-width:650px}.eyebrow{display:inline-block;font-size:11px;letter-spacing:2.2px;font-weight:800;color:#b36e6e;margin-bottom:14px}.hero h1{font-family:"Playfair Display",serif;font-size:clamp(48px,7vw,82px);line-height:1.03;letter-spacing:-2px;margin-bottom:20px}.hero h1 em{font-style:normal;color:#b96873}.hero p{max-width:540px;font-size:17px;color:#745c54;margin-bottom:30px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:13px 22px;border-radius:999px;font-weight:700;font-size:14px}.btn-primary{background:#6d4637;color:white;box-shadow:0 10px 24px rgba(109,70,55,.18)}.btn-light{background:white;border:1px solid #dfcfc4}.hero-note{margin-top:24px;font-size:12px;color:#8b7167}.hero-note span{color:#7b9b65}.hero-art{position:relative;min-height:470px;display:grid;place-items:center}.blob{position:absolute;border-radius:50%;filter:blur(.2px)}.blob-one{width:350px;height:350px;background:#efd3c7;right:12%;top:8%}.blob-two{width:180px;height:180px;background:#e8bfc2;left:5%;bottom:7%}.coffee-cup{position:relative;width:230px;height:170px;border-radius:25px 25px 70px 70px;background:#f9f0e9;border:10px solid #6d4637;display:grid;place-items:center;z-index:2;box-shadow:0 20px 30px rgba(85,51,40,.15)}.coffee-cup:after{content:"";position:absolute;right:-70px;top:35px;width:65px;height:70px;border:12px solid #6d4637;border-left:0;border-radius:0 40px 40px 0}.coffee-cup span{font-size:80px;filter:grayscale(.1)}.steam{position:absolute;width:5px;height:70px;background:#c59e91;border-radius:10px;top:55px;z-index:1;opacity:.55}.s1{transform:translateX(-35px) rotate(8deg)}.s2{transform:translateX(0) rotate(-6deg);height:90px}.s3{transform:translateX(35px) rotate(10deg)}.cookie{position:absolute;bottom:55px;right:8%;font-size:75px;z-index:3;transform:rotate(-15deg)}.sparkle{position:absolute;color:#b96873;font-size:25px}.sp1{top:13%;left:10%}.sp2{right:5%;top:35%}.sp3{left:22%;bottom:12%}.section{padding:90px 8%}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:40px}.section-heading h2{font-family:"Playfair Display",serif;font-size:48px;line-height:1.1}.section-heading>p{max-width:330px;color:#816a61}.centered{text-align:center;display:block}.centered p{margin:12px auto 0}.favorite-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.drink-card{position:relative;padding:34px;background:#fff;border:1px solid #eadbd0;border-radius:25px;box-shadow:0 10px 30px rgba(100,65,50,.06);transition:.25s}.drink-card:hover{transform:translateY(-5px)}.featured-card{background:#f4e1d8}.card-emoji{font-size:55px;margin-bottom:18px}.tag{font-size:9px;font-weight:800;letter-spacing:1.4px;color:#ad6868}.drink-card h3{font-family:"Playfair Display",serif;font-size:27px;margin:7px 0}.drink-card p{color:#806960;font-size:14px;min-height:48px}.drink-card strong{display:block;margin-top:18px;font-size:19px}.menu-section{background:#f8eee7}.filters{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-bottom:35px}.filter{border:1px solid #dfcec2;background:#fffaf5;border-radius:999px;padding:10px 17px;font:600 13px "DM Sans";color:#674b42;cursor:pointer}.filter.active,.filter:hover{background:#6d4637;color:white;border-color:#6d4637}.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.menu-item{background:#fff;border-radius:18px;padding:20px;border:1px solid #eadbd0;transition:.2s}.menu-item:hover{transform:translateY(-3px)}.menu-icon{font-size:31px}.menu-item h3{font-family:"Playfair Display",serif;font-size:19px;margin:7px 0 2px}.menu-item p{font-size:12px;color:#8a7168;min-height:38px}.price{font-weight:800;color:#a85f63}.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:center}.about-art{min-height:390px;background:#efd8cd;border-radius:40px;position:relative;display:grid;place-items:center;overflow:hidden}.about-circle{width:230px;height:230px;border-radius:50%;background:#fffaf5;display:grid;place-items:center;font-size:100px;color:#c0797d}.about-card{position:absolute;bottom:28px;right:28px;background:#6d4637;color:white;padding:18px 25px;border-radius:18px;font-size:10px;letter-spacing:2px}.about-card strong{font-size:20px;line-height:.9;letter-spacing:0}.about-copy h2{font-family:"Playfair Display",serif;font-size:48px;line-height:1.1;margin-bottom:20px}.about-copy p{color:#79625a;margin-bottom:14px}.about-points{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.about-points span{padding:9px 13px;background:#f5e6df;border-radius:999px;font-size:12px;font-weight:700}.gallery{background:#fff}.gallery-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:190px 190px;gap:14px}.gallery-item{border-radius:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:14px;font-weight:700;overflow:hidden}.gallery-item div{font-size:65px;margin-bottom:4px}.gallery-item.large{grid-row:span 2;background:#e8d0c5}.gallery-item.pink{background:#f2d8dc}.gallery-item.tan{background:#ead8bd}.gallery-item.brown{background:#c9a18d}.gallery-item.cream{background:#f4eadc}.visit{background:#f7e8df}.visit-card{background:#fffaf5;border-radius:35px;padding:55px;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;box-shadow:0 15px 40px rgba(90,50,40,.08)}.visit-card h2{font-family:"Playfair Display",serif;font-size:47px;line-height:1.1;margin-bottom:15px}.visit-card p{color:#7e665d;max-width:520px}.details{display:flex;gap:28px;margin:28px 0}.details>div{display:flex;gap:10px;font-size:13px}.details span{font-size:23px}.details strong{color:#4c3630}.socials{display:flex;gap:10px;flex-wrap:wrap}.socials a{background:#f3e2da;padding:10px 14px;border-radius:999px;font-size:12px;font-weight:700}.map-placeholder{min-height:280px;border-radius:25px;background:linear-gradient(135deg,#e5d3c7,#f4e4dc);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;border:2px dashed #d3b9aa}.map-pin{font-size:50px;margin-bottom:8px}.map-placeholder strong{font-family:"Playfair Display",serif;font-size:24px}.map-placeholder span{color:#806960;margin-bottom:16px}.map-placeholder a{background:#6d4637;color:white;padding:10px 15px;border-radius:999px;font-size:12px;font-weight:700}footer{padding:35px 8%;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#3d2b27;color:#fff3ea}.footer-brand{display:grid;grid-template-columns:42px auto;column-gap:10px;align-items:center}.footer-brand .brand-mark{grid-row:span 2;background:#fff3ea;color:#6d4637}.footer-brand strong{font-family:"Playfair Display",serif}.footer-brand small{font-size:9px;color:#cbb4a8;letter-spacing:1px}.footer-brand strong,.footer-brand small{grid-column:2}.footer-brand .brand-mark{grid-column:1}.footer-brand{font-size:15px}.footer-brand strong{font-size:18px}.footer-brand small{display:block}.footer p{font-size:11px;color:#cbb4a8}.back-top{position:fixed;right:22px;bottom:22px;width:42px;height:42px;border:0;border-radius:50%;background:#6d4637;color:white;font-size:20px;cursor:pointer;opacity:0;pointer-events:none;transition:.2s;z-index:10}.back-top.show{opacity:1;pointer-events:auto}@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:55px}.hero-art{min-height:370px}.menu-grid{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr;gap:45px}.visit-card{grid-template-columns:1fr}.favorite-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}.gallery-item.large{grid-row:span 2}.section-heading{align-items:start;flex-direction:column}}@media(max-width:700px){.navbar{height:70px;padding:0 5%}.menu-toggle{display:block}.navbar nav{position:absolute;top:70px;left:0;right:0;background:#fffaf5;border-bottom:1px solid #eadbd0;display:none;flex-direction:column;padding:18px 6%;gap:17px}.navbar nav.open{display:flex}.hero{background:#fffaf5;padding:50px 7% 20px}.hero-art{min-height:300px}.blob-one{width:280px;height:280px}.coffee-cup{width:185px;height:140px}.coffee-cup span{font-size:60px}.hero h1{font-size:53px}.section{padding:65px 7%}.section-heading h2,.about-copy h2,.visit-card h2{font-size:38px}.menu-grid{grid-template-columns:1fr 1fr}.details{flex-direction:column;gap:14px}.visit-card{padding:32px 25px}.gallery-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:170px 170px 170px}.gallery-item.large{grid-column:span 2;grid-row:span 1}.gallery-item div{font-size:50px}footer{flex-direction:column;align-items:flex-start}}@media(max-width:440px){.menu-grid{grid-template-columns:1fr}.hero-art{min-height:270px}.coffee-cup{width:165px;height:125px}.cookie{font-size:55px}.section-heading h2{font-size:34px}}
+
+</style>
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#home" aria-label="Kris and Beans home">
+      <span class="brand-mark">☕</span>
+      <span><strong>Kriselle Cafe</strong><small>Where Good Day Begins</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR LITTLE CUP OF COMFORT</span>
+        <h1>Where <em>Good Day</em> Begins.</h1>
+        <p>Freshly brewed coffee, cozy moments, and delicious little treats — right in the heart of Batangas City.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#menu">Explore Menu <span>→</span></a>
+          <a class="btn btn-light" href="#visit">Find Us</a>
+        </div>
+        <div class="hero-note"><span>●</span> Open daily · 7:00 AM – 10:00 PM</div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of coffee and pastry">
+        <div class="blob blob-one"></div>
+        <div class="blob blob-two"></div>
+        <div class="coffee-cup"><span>☕</span></div>
+        <div class="steam s1"></div><div class="steam s2"></div><div class="steam s3"></div>
+        <div class="cookie">🍪</div>
+        <div class="sparkle sp1">✦</div><div class="sparkle sp2">✦</div><div class="sparkle sp3">✦</div>
+      </div>
+    </section>
+
+    <section class="favorites section" id="menu">
+      <div class="section-heading">
+        <div><span class="eyebrow">MADE WITH LOVE</span><h2>Our Favorites</h2></div>
+        <p>Simple, comforting, and made for your kind of day.</p>
+      </div>
+      <div class="favorite-grid">
+        <article class="drink-card featured-card">
+          <div class="card-emoji">☕</div><span class="tag">BEST SELLER</span>
+          <h3>Spanish Latte</h3><p>Rich espresso, creamy milk, and a touch of sweetness.</p><strong>₱130</strong>
+        </article>
+        <article class="drink-card">
+          <div class="card-emoji">🍵</div><span class="tag">FAN FAVORITE</span>
+          <h3>Matcha Latte</h3><p>Earthy, creamy, and smooth with just the right balance.</p><strong>₱130</strong>
+        </article>
+        <article class="drink-card">
+          <div class="card-emoji">🍰</div><span class="tag">SWEET PICK</span>
+          <h3>Blueberry Cheesecake</h3><p>Creamy cheesecake topped with a bright blueberry finish.</p><strong>₱150</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section section">
+      <div class="section-heading centered"><span class="eyebrow">SOMETHING FOR EVERY MOOD</span><h2>The Menu</h2><p>Good coffee deserves good company.</p></div>
+      <div class="filters" role="tablist" aria-label="Menu categories">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="coffee">☕ Coffee</button>
+        <button class="filter" data-filter="noncoffee">🧋 Non-Coffee</button>
+        <button class="filter" data-filter="pastry">🍰 Pastries</button>
+        <button class="filter" data-filter="food">🥪 Food</button>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-art"><div class="about-circle">♡</div><div class="about-card">BREWED<br><strong>WITH<br>HEART</strong></div></div>
+      <div class="about-copy">
+        <span class="eyebrow">A LITTLE ABOUT US</span>
+        <h2>A cozy corner for your everyday moments.</h2>
+        <p>Kriselle Cafe was made for the mornings that need a little warmth, the afternoons that deserve a break, and the conversations that last a little longer.</p>
+        <p>We believe a great cup of coffee doesn't have to be complicated. Just good beans, thoughtful flavors, and a welcoming place to slow down.</p>
+        <div class="about-points"><span>♡ Freshly made</span><span>♡ Cozy atmosphere</span><span>♡ Made with care</span></div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-heading centered"><span class="eyebrow">A GLIMPSE OF KRIS &amp; BEANS</span><h2>Good Days Look Like This</h2></div>
+      <div class="gallery-grid">
+        <div class="gallery-item large"><div>☕</div><span>Slow mornings</span></div>
+        <div class="gallery-item pink"><div>🍰</div><span>Sweet little treats</span></div>
+        <div class="gallery-item tan"><div>🧋</div><span>Favorite sips</span></div>
+        <div class="gallery-item brown"><div>🥐</div><span>Fresh bites</span></div>
+        <div class="gallery-item cream"><div>♡</div><span>Cozy moments</span></div>
+      </div>
+    </section>
+
+    <section class="visit section" id="visit">
+      <div class="visit-card">
+        <div>
+          <span class="eyebrow">COME SAY HELLO</span>
+          <h2>We'll save you a cozy seat.</h2>
+          <p>Drop by for your favorite drink, a quick bite, or simply a little time for yourself.</p>
+          <div class="details">
+            <div><span>📍</span><div><strong>Location</strong><br>Rizal Ave., Batangas City</div></div>
+            <div><span>🕐</span><div><strong>Opening Hours</strong><br>Daily · 7:00 AM – 10:00 PM</div></div>
+          </div>
+          <div class="socials">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook · Kriselle Cafe</a>
+            <a href="https://www.instagram.com/krisandbeanscoffee/" target="_blank" rel="noopener noreferrer">Instagram · @krisandbeanscoffee</a>
+          </div>
+        </div>
+        <div class="map-placeholder">
+          <div class="map-pin">📍</div>
+          <strong>Rizal Ave.</strong><span>Batangas City</span>
+          <a href="https://www.google.com/maps/search/?api=1&query=Rizal+Avenue+Batangas+City" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-mark">☕</span><strong>Kriselle Cafe</strong><small>Where Good Day Begins</small></div>
+    <p>© <span id="year"></span> Kriselle Cafe. Made with ♡ in Batangas City.</p>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script>
+const menu = [
+  {cat:"coffee", icon:"☕", name:"Americano", price:100, desc:"Bold espresso with hot water."},
+  {cat:"coffee", icon:"🥛", name:"Café Latte", price:120, desc:"Espresso with smooth steamed milk."},
+  {cat:"coffee", icon:"☕", name:"Cappuccino", price:120, desc:"Espresso, silky milk, and airy foam."},
+  {cat:"coffee", icon:"🤎", name:"Spanish Latte", price:130, desc:"Creamy, sweet, and extra comforting."},
+  {cat:"coffee", icon:"🍯", name:"Caramel Macchiato", price:135, desc:"Espresso with vanilla and caramel."},
+  {cat:"coffee", icon:"🍫", name:"Mocha", price:130, desc:"Coffee and chocolate in one cup."},
+  {cat:"coffee", icon:"🧊", name:"Iced Coffee", price:110, desc:"Chilled coffee served over ice."},
+  {cat:"coffee", icon:"🥤", name:"Iced Spanish Latte", price:135, desc:"Our creamy Spanish latte, iced."},
+  {cat:"noncoffee", icon:"🍫", name:"Chocolate", price:110, desc:"Creamy chocolate drink, hot or iced."},
+  {cat:"noncoffee", icon:"🍵", name:"Matcha Latte", price:130, desc:"Smooth matcha with creamy milk."},
+  {cat:"noncoffee", icon:"🍓", name:"Strawberry Milk", price:120, desc:"Sweet strawberry and creamy milk."},
+  {cat:"noncoffee", icon:"🍋", name:"Iced Tea", price:90, desc:"Refreshing, lightly sweetened tea."},
+  {cat:"pastry", icon:"🍪", name:"Chocolate Chip Cookie", price:70, desc:"Soft-baked cookie with chocolate chips."},
+  {cat:"pastry", icon:"🍌", name:"Banana Bread", price:85, desc:"Moist banana bread, freshly sliced."},
+  {cat:"pastry", icon:"🫐", name:"Blueberry Cheesecake", price:150, desc:"Creamy cheesecake with blueberry topping."},
+  {cat:"pastry", icon:"🍰", name:"Chocolate Cake", price:140, desc:"Rich chocolate cake for sweet cravings."},
+  {cat:"food", icon:"🥪", name:"Ham & Cheese Sandwich", price:120, desc:"Toasted bread, ham, and melty cheese."},
+  {cat:"food", icon:"🥪", name:"Tuna Sandwich", price:120, desc:"Creamy tuna filling in toasted bread."},
+  {cat:"food", icon:"🍗", name:"Chicken Sandwich", price:135, desc:"Savory chicken in a warm toasted bun."},
+  {cat:"food", icon:"🍟", name:"French Fries", price:100, desc:"Crispy fries with a savory finish."},
+  {cat:"food", icon:"🧇", name:"Waffle with Syrup", price:110, desc:"Warm, fluffy waffle with syrup."}
+];
+
+const menuGrid = document.getElementById("menuGrid");
+const filters = document.querySelectorAll(".filter");
+
+function renderMenu(filter="all"){
+  const items = filter === "all" ? menu : menu.filter(item => item.cat === filter);
+  menuGrid.innerHTML = items.map(item => `
+    <article class="menu-item">
+      <div class="menu-icon">${item.icon}</div>
+      <h3>${item.name}</h3>
+      <p>${item.desc}</p>
+      <span class="price">₱${item.price}</span>
+    </article>
+  `).join("");
+}
+renderMenu();
+
+filters.forEach(button => {
+  button.addEventListener("click", () => {
+    filters.forEach(b => b.classList.remove("active"));
+    button.classList.add("active");
+    renderMenu(button.dataset.filter);
+  });
+});
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  const open = navLinks.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", open);
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+  });
+});
+
+const backTop = document.getElementById("backTop");
+window.addEventListener("scroll", () => {
+  backTop.classList.toggle("show", window.scrollY > 500);
+});
+backTop.addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"}));
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+</script>
+</body>
+</html>
