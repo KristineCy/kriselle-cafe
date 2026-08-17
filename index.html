@@ -68,6 +68,34 @@
   font-size:20px;
   color:#5b3b31;
 }
+
+.footer-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.footer-brand .brand-mark {
+    width: 48px !important;
+    height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.footer-brand .brand-mark img {
+    width: 44px !important;
+    height: 44px !important;
+    max-width: 44px !important;
+    max-height: 44px !important;
+    object-fit: contain !important;
+    display: block !important;
+    position: static !important;
+    margin: 0 !important;
+}
     
 </style>
 </head>
@@ -196,7 +224,7 @@
   </main>
 
   <footer>
-    <div class="footer-brand"><span class="brand-mark">☕</span><strong>Kriselle Cafe</strong><small>Where Good Day Begins</small></div>
+    <div class="footer-brand"><span class="brand-mark"><img src="logo.png" alt="Kriselle Cafe Logo"></span><strong>Kriselle Cafe</strong><small>Where Good Day Begins</small></div>
     <p>© <span id="year"></span> Kriselle Cafe. Made with ♡ in Batangas City.</p>
   </footer>
 
