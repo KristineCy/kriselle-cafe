@@ -182,18 +182,19 @@ p {
 }
 
     /* OUR FAVORITES CARDS */
-.drink-card {
-    background: rgba(255, 248, 242, 0.92) !important;
+.drink-card,
+.drink-card.featured-card {
+    background: rgba(255, 248, 242, 0.96) !important;
     border: 1px solid rgba(190, 130, 115, 0.20);
     border-radius: 22px;
     box-shadow: 0 8px 25px rgba(80, 45, 35, 0.10);
     backdrop-filter: blur(4px);
 
-    /* Make all cards equal in size */
     height: 440px;
     display: flex;
     flex-direction: column;
 }
+    
 /* BEST SELLER CARD */
 .drink-card.featured-card {
     background: rgba(246, 225, 220, 0.94) !important;
