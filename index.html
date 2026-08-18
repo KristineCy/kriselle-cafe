@@ -188,8 +188,12 @@ p {
     border-radius: 22px;
     box-shadow: 0 8px 25px rgba(80, 45, 35, 0.10);
     backdrop-filter: blur(4px);
-}
 
+    /* Make all cards equal in size */
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+}
 /* BEST SELLER CARD */
 .drink-card.featured-card {
     background: rgba(246, 225, 220, 0.94) !important;
@@ -206,6 +210,9 @@ p {
 
 .drink-card strong {
     color: #7a3f38 !important;
+    display: block;
+    margin-top: auto;
+    padding-top: 20px;
 }
 
 /* LABEL */
@@ -213,6 +220,13 @@ p {
     color: #9b5c58 !important;
 }
 
+    .favorite-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+    
     .favorite-card {
     background: rgba(255, 248, 242, 0.58) !important;
     border: 1px solid rgba(255, 255, 255, 0.65);
