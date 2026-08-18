@@ -38,11 +38,30 @@
     position: static !important;
     margin: 0 !important;
 }
-    @media(max-width:440px){
-    .menu-grid{grid-template-columns:1fr}
-    .hero h1{font-size:49px}
-}
+  @media(max-width:768px){
 
+    .menu-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:49px;
+    }
+
+    /* OUR FAVORITES - ONE BOX PER ROW */
+    .favorite-grid{
+        grid-template-columns:1fr;
+        gap:28px;
+    }
+
+    .drink-card,
+    .drink-card.featured-card{
+        width:100%;
+        min-height:420px;
+        height:auto;
+    }
+}
+    
 /* OWNER INFORMATION */
 .owner{
   margin-top:28px;
