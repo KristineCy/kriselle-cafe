@@ -320,6 +320,34 @@ p {
     .hero-art {
     display: none !important;
 }
+
+/* ============================= */
+/* MOBILE OUR FAVORITES FIX */
+/* ============================= */
+
+@media screen and (max-width: 768px) {
+
+    .favorite-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 30px !important;
+    }
+
+    .favorite-grid .drink-card {
+        display: flex !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        height: auto !important;
+        min-height: 420px !important;
+
+        flex: none !important;
+        grid-column: auto !important;
+    }
+
+}
     
 </style>
 </head>
