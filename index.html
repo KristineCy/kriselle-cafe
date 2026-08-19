@@ -579,7 +579,6 @@ p {
     z-index: 2;
 }
 
-
 /* =========================================
    HOVER EFFECT
    ========================================= */
@@ -593,7 +592,6 @@ p {
         0 15px 40px rgba(80, 45, 35, 0.16),
         inset 0 1px 0 rgba(255, 255, 255, 0.85);
 }
-
 
 /* =========================================
    KEEP YOUR ORIGINAL COLORS,
@@ -620,13 +618,162 @@ p {
     background: rgba(244, 234, 220, 0.28) !important;
 }
 
-
 /* =========================================
    EXTRA SHINE WHEN HOVERED
    ========================================= */
 
 .gallery-item:hover::before {
     opacity: 1;
+}
+
+  /* =========================================
+   FINAL GLASS EFFECT
+   DESKTOP + MOBILE
+   ========================================= */
+
+/* ---------- GOOD DAYS LOOK LIKE THIS ---------- */
+
+.gallery-item,
+.gallery-item.large,
+.gallery-item.pink,
+.gallery-item.tan,
+.gallery-item.brown,
+.gallery-item.cream {
+    position: relative !important;
+    overflow: hidden !important;
+
+    background: rgba(255, 248, 242, 0.28) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.60) !important;
+
+    box-shadow:
+        0 8px 32px rgba(60, 35, 25, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.70) !important;
+
+    backdrop-filter: blur(5px) saturate(115%) !important;
+    -webkit-backdrop-filter: blur(5px) saturate(115%) !important;
+}
+
+/* SHINY REFLECTION */
+
+.gallery-item::before {
+    content: "" !important;
+    position: absolute !important;
+
+    top: -70%;
+    left: -35%;
+
+    width: 70%;
+    height: 220%;
+
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255,255,255,0.04) 35%,
+        rgba(255,255,255,0.35) 50%,
+        rgba(255,255,255,0.06) 60%,
+        transparent 100%
+    ) !important;
+
+    transform: rotate(25deg);
+
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* KEEP GALLERY CONTENT VISIBLE */
+
+.gallery-item > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------- COME SAY HELLO ---------- */
+
+.visit {
+    background: transparent !important;
+}
+
+.visit-card {
+    position: relative !important;
+    overflow: hidden !important;
+
+    background: rgba(255, 248, 242, 0.28) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.60) !important;
+    border-radius: 35px !important;
+
+    backdrop-filter: blur(5px) saturate(115%) !important;
+    -webkit-backdrop-filter: blur(5px) saturate(115%) !important;
+
+    box-shadow:
+        0 8px 32px rgba(60, 35, 25, 0.12),
+        inset 0 1px 0 rgba(255,255,255,0.70) !important;
+}
+
+/* COME SAY HELLO SHINE */
+
+.visit-card::before {
+    content: "" !important;
+
+    position: absolute !important;
+    inset: 0;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.16),
+        rgba(255,255,255,0.04) 45%,
+        transparent 70%
+    ) !important;
+
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+/* KEEP CONTENT ABOVE SHINE */
+
+.visit-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* MAP BOX ALSO GLASS */
+
+.map-placeholder {
+    background: rgba(255,248,242,0.22) !important;
+
+    border: 2px dashed rgba(211,185,170,0.65) !important;
+
+    backdrop-filter: blur(4px) saturate(115%) !important;
+    -webkit-backdrop-filter: blur(4px) saturate(115%) !important;
+}
+
+/* =========================================
+   FORCE SAME EFFECT ON DESKTOP
+   ========================================= */
+
+@media screen and (min-width: 769px) {
+
+    .gallery-item,
+    .gallery-item.large,
+    .gallery-item.pink,
+    .gallery-item.tan,
+    .gallery-item.brown,
+    .gallery-item.cream {
+        background: rgba(255,248,242,0.28) !important;
+        backdrop-filter: blur(5px) saturate(115%) !important;
+        -webkit-backdrop-filter: blur(5px) saturate(115%) !important;
+    }
+
+    .visit {
+        background: transparent !important;
+    }
+
+    .visit-card {
+        background: rgba(255,248,242,0.28) !important;
+        backdrop-filter: blur(5px) saturate(115%) !important;
+        -webkit-backdrop-filter: blur(5px) saturate(115%) !important;
+    }
 }
   
 </style>
