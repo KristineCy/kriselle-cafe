@@ -448,6 +448,67 @@ p {
         0 15px 40px rgba(80, 45, 35, 0.16),
         inset 0 1px 0 rgba(255, 255, 255, 0.75) !important;
 }
+
+  /* =========================================
+   COME SAY HELLO - TRUE GLASS EFFECT
+   ========================================= */
+
+/* Let the cafe background show behind the section */
+.visit {
+    background: transparent !important;
+}
+
+/* Main glass rectangle */
+.visit-card {
+    background: rgba(255, 248, 242, 0.28) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.60) !important;
+    border-radius: 35px !important;
+
+    backdrop-filter: blur(5px) saturate(115%) !important;
+    -webkit-backdrop-filter: blur(5px) saturate(115%) !important;
+
+    box-shadow:
+        0 8px 32px rgba(60, 35, 25, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.70) !important;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glass shine */
+.visit-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.16) 0%,
+            rgba(255,255,255,0.05) 40%,
+            transparent 70%
+        );
+
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+/* Keep all text/content above the glass shine */
+.visit-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Keep the location box slightly glassy too */
+.map-placeholder {
+    background: rgba(255, 248, 242, 0.22) !important;
+
+    border: 2px dashed rgba(211, 185, 170, 0.65) !important;
+
+    backdrop-filter: blur(4px) saturate(115%) !important;
+    -webkit-backdrop-filter: blur(4px) saturate(115%) !important;
+}
   
 </style>
 </head>
