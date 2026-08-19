@@ -347,49 +347,50 @@ p {
         grid-column: auto !important;
     }
 
-  .about-art {
-    background: linear-gradient(
-        135deg,
-        rgba(255, 225, 220, 0.25),
-        rgba(255, 195, 200, 0.22)
-    );
+ .about-art {
+    background: rgba(255, 210, 215, 0.12);
 
-    backdrop-filter: blur(20px) saturate(120%);
-    -webkit-backdrop-filter: blur(20px) saturate(120%);
+    backdrop-filter: blur(25px) saturate(140%);
+    -webkit-backdrop-filter: blur(25px) saturate(140%);
 
-    border: 1px solid rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.65);
     border-radius: 40px;
 
     box-shadow:
-        0 15px 40px rgba(80, 40, 30, 0.15),
-        inset 0 1px 1px rgba(255, 255, 255, 0.65);
+        0 20px 50px rgba(70, 40, 30, 0.15),
+        inset 0 1px 2px rgba(255, 255, 255, 0.8),
+        inset 0 -1px 2px rgba(255, 180, 190, 0.15);
 
     position: relative;
     overflow: hidden;
 }
 
+/* Glass reflection */
 .about-art::before {
     content: "";
     position: absolute;
-    top: -60%;
-    left: -25%;
+    top: -50%;
+    left: -30%;
     width: 70%;
-    height: 220%;
+    height: 200%;
 
     background: linear-gradient(
         90deg,
-        transparent,
-        rgba(255, 255, 255, 0.20),
-        transparent
+        transparent 0%,
+        rgba(255, 255, 255, 0.30) 45%,
+        rgba(255, 255, 255, 0.08) 55%,
+        transparent 100%
     );
 
     transform: rotate(25deg);
     pointer-events: none;
+    z-index: 1;
 }
 
+/* Keep logo and brown card above glass */
 .about-art > * {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
     
 </style>
