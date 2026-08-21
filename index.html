@@ -876,22 +876,28 @@ section.visit .visit-card > * {
 
 /* ===== SMALL OWNER SIGNATURE ===== */
 
+/* DESKTOP / LAPTOP */
 .owner .owner-signature {
     display: block !important;
-    width: 55px !important;
-    height: 22px !important;
-    max-width: 55px !important;
-    max-height: 22px !important;
+    width: 35px !important;
+    max-width: 35px !important;
+    height: 18px !important;
+    max-height: 18px !important;
     min-width: 0 !important;
     min-height: 0 !important;
-
     object-fit: contain !important;
-    object-position: left center !important;
-
-    margin: 6px 0 2px 0 !important;
+    margin: 4px 0 1px 0 !important;
     padding: 0 !important;
+}
 
-    transform: none !important;
+/* MOBILE - KEEP CURRENT GOOD SIZE */
+@media screen and (max-width: 768px) {
+    .owner .owner-signature {
+        width: 55px !important;
+        max-width: 55px !important;
+        height: 22px !important;
+        max-height: 22px !important;
+    }
 }
   
 </style>
