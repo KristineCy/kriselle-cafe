@@ -874,37 +874,35 @@ section.visit .visit-card > * {
     z-index: 2 !important;
 }
 
-/* ===== SMALL OWNER SIGNATURE ===== */
-
-/* DESKTOP / LAPTOP */
-.owner > img.owner-signature {
+/* OWNER SIGNATURE */
+.owner-signature {
     display: block !important;
-
-    width: 125px !important;
-    max-width: 125px !important;
-
+    width: 150px !important;
     height: auto !important;
-    max-height: 55px !important;
-
-    min-width: 0 !important;
-    min-height: 0 !important;
-
+    max-width: 150px !important;
+    max-height: 80px !important;
     object-fit: contain !important;
-    object-position: left center !important;
-
-    margin: 5px 0 2px 0 !important;
+    margin: 0 auto 5px !important;
     padding: 0 !important;
-
-    transform: none !important;
+    background: transparent !important;
+    border: none !important;
 }
 
-/* MOBILE - KEEP CURRENT GOOD SIZE */
+/* DESKTOP / LAPTOP */
+@media screen and (min-width: 769px) {
+    .owner-signature {
+        width: 150px !important;
+        max-width: 150px !important;
+        height: auto !important;
+    }
+}
+
+/* MOBILE */
 @media screen and (max-width: 768px) {
-    .owner .owner-signature {
-        width: 90px !important;
-        max-width: 90px !important;
-        height: 50px !important;
-        max-height: 50px !important;
+    .owner-signature {
+        width: 120px !important;
+        max-width: 120px !important;
+        height: auto !important;
     }
 }
   
@@ -990,9 +988,7 @@ section.visit .visit-card > * {
        <div class="owner">
     <span>OWNER &amp; MANAGING DIRECTOR</span>
 
-    <img src="signature.png"
-         alt="Signature"
-         class="owner-signature">
+    <img class="owner-signature" src="signature.png" alt="Owner's Signature">
 
     <strong>Kristine Cyrelle C. De Torres</strong>
 </div>
