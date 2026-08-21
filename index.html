@@ -874,35 +874,49 @@ section.visit .visit-card > * {
     z-index: 2 !important;
 }
 
-/* OWNER SIGNATURE */
-.owner-signature {
-    display: block !important;
-    width: 150px !important;
-    height: auto !important;
-    max-width: 150px !important;
-    max-height: 80px !important;
-    object-fit: contain !important;
-    margin: 0 auto 5px !important;
-    padding: 0 !important;
-    background: transparent !important;
-    border: none !important;
+/* OWNER SIGNATURE OVER NAME */
+.signature-name {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-/* DESKTOP / LAPTOP */
-@media screen and (min-width: 769px) {
-    .owner-signature {
-        width: 150px !important;
-        max-width: 150px !important;
-        height: auto !important;
-    }
+.owner-signature {
+    display: block !important;
+    width: 120px !important;
+    max-width: 120px !important;
+    height: auto !important;
+    margin: -8px 0 -28px 0 !important;
+    padding: 0 !important;
+    object-fit: contain !important;
+    background: transparent !important;
+    border: none !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.signature-name strong {
+    position: relative;
+    z-index: 1;
+    display: block;
 }
 
 /* MOBILE */
 @media screen and (max-width: 768px) {
+    .signature-name {
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+
     .owner-signature {
-        width: 120px !important;
-        max-width: 120px !important;
-        height: auto !important;
+        width: 105px !important;
+        max-width: 105px !important;
+        margin: -5px 0 -25px 0 !important;
+    }
+
+    .signature-name strong {
+        text-align: left !important;
     }
 }
   
@@ -985,12 +999,13 @@ section.visit .visit-card > * {
         <h2>Welcome to Kriselle Cafe, where every cup is made to brighten your day.</h2>
         <p>Inspired by the name Kristine Cyrelle, Kriselle Cafe was created as a cozy space where good coffee and meaningful moments come together in a place that feels a little like home.</p>
         <p>From the first sip to the last smile, we want every visit to feel comforting, genuine, and memorable.</p>
-       <div class="owner">
+      <div class="owner">
     <span>OWNER &amp; MANAGING DIRECTOR</span>
 
-    <img class="owner-signature" src="signature.png" alt="Owner's Signature">
-
-    <strong>Kristine Cyrelle C. De Torres</strong>
+    <div class="signature-name">
+        <img class="owner-signature" src="signature.png" alt="Owner's Signature">
+        <strong>Kristine Cyrelle C. De Torres</strong>
+    </div>
 </div>
 
         <div class="about-points"><span>♡ Freshly made</span><span>♡ Cozy atmosphere</span><span>♡ Made with care</span></div>
