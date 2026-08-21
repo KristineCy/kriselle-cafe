@@ -877,17 +877,25 @@ section.visit .visit-card > * {
 /* ===== SMALL OWNER SIGNATURE ===== */
 
 /* DESKTOP / LAPTOP */
-.owner .owner-signature {
+.owner > img.owner-signature {
     display: block !important;
-    width: 20px !important;
-    max-width: 20px !important;
-    height: 18px !important;
-    max-height: 18px !important;
+
+    width: 125px !important;
+    max-width: 125px !important;
+
+    height: auto !important;
+    max-height: 55px !important;
+
     min-width: 0 !important;
     min-height: 0 !important;
+
     object-fit: contain !important;
-    margin: 4px 0 1px 0 !important;
+    object-position: left center !important;
+
+    margin: 5px 0 2px 0 !important;
     padding: 0 !important;
+
+    transform: none !important;
 }
 
 /* MOBILE - KEEP CURRENT GOOD SIZE */
