@@ -919,6 +919,73 @@ section.visit .visit-card > * {
         text-align: left !important;
     }
 }
+
+  /* =========================================
+   OWNER SIGNATURE - SMALL OVERLAY
+   ========================================= */
+
+.owner-name {
+    position: relative !important;
+    display: inline-block !important;
+    width: 100% !important;
+    min-height: 55px !important;
+    text-align: left !important;
+}
+
+.owner-name strong {
+    position: relative !important;
+    z-index: 1 !important;
+    display: block !important;
+    text-align: left !important;
+    padding-top: 28px !important;
+}
+
+.owner-signature {
+    position: absolute !important;
+
+    /* maliit na size */
+    width: 115px !important;
+    height: 55px !important;
+
+    /* ilagay sa ibabaw ng pangalan */
+    left: 0 !important;
+    top: -12px !important;
+
+    object-fit: contain !important;
+    object-position: left center !important;
+
+    /* transparent */
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    z-index: 2 !important;
+    pointer-events: none !important;
+}
+
+/* =========================================
+   DESKTOP / LAPTOP
+   ========================================= */
+
+@media screen and (min-width: 769px) {
+
+    .owner-name {
+        width: 100% !important;
+        min-height: 58px !important;
+    }
+
+    .owner-name strong {
+        padding-top: 30px !important;
+    }
+
+    .owner-signature {
+        width: 125px !important;
+        height: 55px !important;
+        left: 0 !important;
+        top: -10px !important;
+    }
+}
   
 </style>
 </head>
